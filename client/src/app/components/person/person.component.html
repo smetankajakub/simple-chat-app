@@ -10,7 +10,7 @@ text-align: center; grid-column: 1/1">
         </textarea>
     </fieldset>
     
-    <button mat-raised-button color="primary" (click)="sendNewData()" [disabled]="text.length < 1">
-        <mat-icon>plus</mat-icon>{{'send' | uppercase}}
+    <button mat-raised-button color="cyan" (click)="sendNewData()" [disabled]="text.length < 1">
+        <mat-icon matSuffix>keyboard_arrow_right</mat-icon>{{'send' | uppercase}}
     </button>
 </div>

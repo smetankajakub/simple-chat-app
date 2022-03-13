@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+
+
+.mat-button.mat-purple {
+    color: #6101ee;
+}
+
+.mat-raised-button.mat-purple, .mat-flat-button.mat-purple{
+    background-color: #6101ee;
+    color: white;
+    font-size: small;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+}
+
+ .mat-button.mat-cyan {
+    color: #00dac5;
+ }
+ 
+ .mat-raised-button.mat-cyan, .mat-flat-button.mat-cyan{
+    background-color: #00dac5;
+    color: black;
+    font-size: medium;
+    border-radius: 1.5em;
+    padding: 0.5em;
+ }

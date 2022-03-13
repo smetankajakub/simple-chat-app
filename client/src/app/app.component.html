@@ -1,5 +1,5 @@
 <h1>Simple Chat Application</h1>
-<button mat-raised-button color="primary" (click)="addPerson()" [disabled]="persons.length === 9">
-  <mat-icon color="white" matSuffix>plus</mat-icon>{{'new person' | uppercase}}
+<button mat-raised-button color="purple" (click)="addPerson()" [disabled]="persons.length === 9">
+  <mat-icon color="white" matSuffix>add</mat-icon>{{'add new person' | uppercase}}
 </button>
 <app-chat-board [persons]="persons"></app-chat-board>
