@@ -1,0 +1,9 @@
+<mat-list>
+    <mat-list-item *ngFor="let message of messages">
+        {{message.from}}
+        {{message.text}}
+    </mat-list-item>
+</mat-list>
+<button mat-raised-button (click)="clearMessages()" color="primary">
+    <mat-icon color="white" matSuffix>plus</mat-icon>{{'clear history' | uppercase}}
+</button>

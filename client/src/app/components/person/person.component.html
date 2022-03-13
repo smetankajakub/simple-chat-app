@@ -1,0 +1,16 @@
+<div style="background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center; grid-column: 1/1">
+    <fieldset>
+        <legend>{{person}}</legend>
+        <textarea matInput [(ngModel)]="text" placeholder="Enter you message here ..."
+            style="border: none;resize: none; width: 100%;">
+        </textarea>
+    </fieldset>
+    
+    <button mat-raised-button color="primary" (click)="sendNewData()" [disabled]="text.length < 1">
+        <mat-icon>plus</mat-icon>{{'send' | uppercase}}
+    </button>
+</div>

@@ -1,0 +1,14 @@
+<div style="width: 50%; display: inline-block;">
+    <div class="grid-container" style="    display: grid;
+    grid-template-rows: repeat(3, 10rem);
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 15rem;">
+        <app-person *ngFor="let person of persons; let i = index" [person]="person"></app-person>
+        <!--  -->
+    </div>
+    <!-- <app-person *ngFor="let person of persons" [person]="person"></app-person> -->
+</div>
+<div style="width: 50%; display: inline-block;">
+    <app-chat-history></app-chat-history>
+</div>
