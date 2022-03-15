@@ -12,7 +12,9 @@ export class MessageService {
   constructor() { }
  
   sendData(data: Message) {
-    console.log('send: ', data);
-    this.dataSource.next(data);
+    if(data && data.text !== undefined){
+      this.dataSource.next(data);
+    }
+    
   }
 }

@@ -11,7 +11,7 @@ export class ChatHistoryComponent implements OnInit {
   messages: Message[] = [];
   constructor(
     private messageService: MessageService
-  ) {} 
+  ) { }
 
   ngOnInit(): void {
     this.getData();
@@ -19,7 +19,9 @@ export class ChatHistoryComponent implements OnInit {
 
   getData() {
     this.messageService.data.subscribe(response => {
-      this.messages.push(response);
+      if (response.text !== undefined) {
+        this.messages.push(response);
+      }
       console.log('get data: ', response);  // you will receive the data from sender component here.
     });
   }
