@@ -1,0 +1,21 @@
+.head {
+    border-bottom: solid 1px gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.head #title {
+    width: 80%;
+    margin: 0 30px;
+    display: inline;
+    order: 1;
+}
+
+.head #btn {
+    width: 20%;
+    margin: auto;
+    text-align: right;
+    display: inline;
+    order: 2;
+}

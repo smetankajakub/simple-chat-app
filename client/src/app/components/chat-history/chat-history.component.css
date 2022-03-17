@@ -1,0 +1,21 @@
+.chat-history {
+    position: relative;
+    height: 700px;
+    box-shadow: 0px 8px 14px -1px rgba(0,0,0,0.5);
+}
+
+.gray{
+    color: gray;
+}
+
+.message {
+    border-bottom: solid 1px #ccc;
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

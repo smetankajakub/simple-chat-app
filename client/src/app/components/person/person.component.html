@@ -1,16 +1,11 @@
-<div style="background-color: rgba(255, 255, 255, 0.8);
-border: 1px solid rgba(0, 0, 0, 0.8);
-padding: 20px;
-font-size: 30px;
-text-align: center; grid-column: 1/1">
+<div class="person">
     <fieldset>
         <legend>{{person}}</legend>
-        <textarea matInput [(ngModel)]="text" placeholder="Enter you message here ..."
-            style="border: none;resize: none; width: 100%;">
-        </textarea>
+        <textarea matInput [(ngModel)]="text" placeholder="Enter you message here ..."></textarea>
     </fieldset>
-    
-    <button mat-raised-button color="cyan" (click)="sendNewData()" [disabled]="text.length < 1">
-        <mat-icon matSuffix>keyboard_arrow_right</mat-icon>{{'send' | uppercase}}
-    </button>
+    <div class="send-btn-wrapper">
+        <button class="send-btn" mat-raised-button color="cyan" (click)="sendNewMessage()" [disabled]="text.length < 1">
+            <mat-icon matSuffix>keyboard_arrow_right</mat-icon>{{'send' | uppercase}}
+        </button>
+    </div>
 </div>

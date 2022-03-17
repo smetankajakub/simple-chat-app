@@ -1,0 +1,48 @@
+.persons-container{
+    order: 1;
+    display: grid;
+    grid-template-rows: repeat(3, 15rem);
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    width: 70%;
+}
+
+.chat-history-container {
+    width: 30%; 
+    order: 2;
+}
+
+.board {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1320px) {
+    .persons-container { 
+        grid-template-rows: repeat(5, 20rem);
+        grid-auto-columns: 40%;
+    }
+
+    .chat-history-container {
+        width: 40%;
+    }
+};
+
+@media (max-width: 1100px) {
+    .persons-container { 
+        grid-template-rows: repeat(9, 20rem);
+        grid-auto-columns: 100%;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .chat-history-container {
+        width: 100%;
+    }
+
+    .board {
+        display: flex;
+        flex-direction: column;
+    }
+};

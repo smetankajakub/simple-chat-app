@@ -18,8 +18,7 @@ export class PersonComponent implements OnInit {
   ) { }
 
   ngOnInit(): void { }
-  sendNewData() {
-    console.log('send data');
+  sendNewMessage() {
     let message: Message = {
       from: this.person,
       text: this.text
